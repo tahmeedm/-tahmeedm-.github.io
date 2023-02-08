@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+
+body{
+    margin:0;
+    margin-top: 10px;
+    }
+   
+    img{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+    }
+    
+    h1, h3{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-bottom: 1px;
+        letter-spacing: 2px;
+    }
+
+    p, a, td li{
+      font-family: 'Montserrat', sans-serif;
+    }
+   
+    li{
+        font-size: large;
+        padding: 10px;
+    }
+
+    i{
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 10%;
+      color: #006494;
+      font-size: 18px;
+      font-style: italic;
+    }
+    td.large{
+        font-size: large;
+    }
+   
+    td strong{
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.75px;
+        font-weight: 500;
+        font-size: larger;
+    }
+   
+    nav{
+        position: static;
+        top: 0;
+        margin: 1;
+        width: 100%;
+        display: flex;
+        border-top: 2.5px solid #660452;
+        border-bottom: 1px solid #bababa;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+   
+    nav a{
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        color:#660452;
+        text-align: center;
+        padding: 2% 3%;
+        text-decoration:none;
+        letter-spacing: 2px;
+    }
+   
+    a:hover:not(.active){
+        color: #660452;
+    }
+   
+    a.active {
+        color: #660452;
+    }
+   
+    div {
+        display: flex;
+        margin-top: 20px;
+    }
+   
+    div.sidebar{
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 20%;
+        border-right: 1px solid #bababaef;                     
+        text-align: center;
+        margin-bottom: 5px;
+    }
+   
+    div.body{
+        flex-direction: column;
+        width: 100%;
+        margin: 3%;
+    }
+   
+    div.body table.qualifications{
+        margin-top: 50px;
+    }
+   
+    div.body table.skills{
+        margin-top: 50px;
+        width: 100%;
+    }
+   
+    td progress{
+        width: 100%;
+        height: 35px;
+    }
+   
+    table.qualifications td:nth-child(2){
+        text-align: right;
+    }
+   
+    table tr:nth-child(3){
+        margin-top: 10px;
+    }
+   
+    tr.spacing{
+        height: 50px;
+    }
+   
+    tr.spacing-small{
+        height: 7px
+    }
+   
+    .footer p{
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        border-top: 1px solid #bababaef;
+        padding: 10px 20px;
+       
+    }
+
+    
+    @media only screen and (max-width:1040px){
+       
+        div.box{
+            display: flex;
+            flex-direction: column;
+        }
+        div.body{
+            width:auto;
+        }
+        div.sidebar{
+            border-right: none;
+            border-bottom: 1px solid #bababa;
+            padding-bottom: 8%;
+        }
+       
+        img{
+            width: 225px;
+            height: 225px;
+        }
+   
+    }
+   
+    @media only screen and (max-width:650px){
+        nav a{
+            letter-spacing: normal;
+            padding: 2.5% 2%;
+        }
+    }
+    
+
+    
